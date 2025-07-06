@@ -419,6 +419,58 @@ As a versatile Full-Stack Software Engineer, I specialize in architecting and de
 ### CelcomDigi
 
 
+### Deal AI – NDA Conflict Detection System
+
+![Image][(https://github.com/user-attachments/assets/e32c5d5a-dd48-427f-809f-589ea2e1a16c](https://innvobiz.com/storage/web/1751764301_6869cd4dc9459.webp))
+
+- **Description**  
+  Developed an enterprise-grade AI tool to analyze NDAs and other legal contracts for compliance risks and conflicts with internal legal frameworks. The system leverages LLMs to interpret clause semantics, compare them against predefined legal policies, and generate conflict alerts, allowing legal and compliance teams to significantly reduce manual review time and improve decision-making accuracy.
+
+  
+- **Role and Responsibilities**  
+  - Engineered multimodal prompt workflows combining natural language inputs and document clause structures.
+  - Designed JSON schemas for legal policy mappings and conflict scenarios, enabling precise function calling.
+  - Integrated OpenAI's LLMs to evaluate clause-level intent and detect misalignments with company guidelines.
+  - Developed RESTful APIs to upload, tokenize, and analyze legal documents in real-time.
+  - Implemented JWT-based authentication to secure the platform for internal legal users.
+  - Built UI/UX components to visualize document highlights, risk scores, and suggested remediations.
+  - Used pandas and spaCy for NLP preprocessing, named entity extraction, and context scoring.
+  - Orchestrated containerized environments using Docker and deployed scalable services on AWS EC2.
+  - Developed validation pipelines to ensure accurate LLM predictions with human-in-the-loop review.
+  - Implemented caching for recurring legal clauses using Redis to reduce response latency by 40%.
+  - Wrote unit tests and integration pipelines with pytest and CI/CD workflows for reliable delivery.
+
+  
+- **Challenges Faced**  
+  1. ***Complex Legal Language Interpretation***  
+     <b>Challenge: </b> Identifying semantic conflicts in vague or overlapping legal clauses.  
+     <b>Solution: </b> Fine-tuned LLM responses using curated prompt examples and function calling logic to extract and classify intent.
+
+  2. ***Real-Time Conflict Detection with External APIs***  
+     <b>Challenge: </b> Parsing long documents and dynamically evaluating risk across multiple legal domains slowed down performance.  
+     <b>Solution: </b> Chunked document parsing and used asynchronous calls for LLM + rule-based hybrid risk detection.
+
+  3. ***Maintaining Accuracy Under Legal Constraints***  
+     <b>Challenge: </b> Ensuring zero false positives/negatives in legally sensitive documents.  
+     <b>Solution: </b> Incorporated a feedback loop with legal advisors and reinforced high-risk clause types in training data.
+
+  
+![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python)
+![Flask](https://img.shields.io/badge/Flask-2.0%2B-000000?logo=flask)
+![LLMs](https://img.shields.io/badge/OpenAI-GPT4/LLM-blueviolet?logo=openai)
+![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-ORM-blue)
+![pytest](https://img.shields.io/badge/pytest-7.0%2B-0A9EDC?logo=pytest)
+![Docker](https://img.shields.io/badge/Docker-24.0%2B-2496ED?logo=docker)
+![AWS EC2](https://img.shields.io/badge/AWS_EC2-Instance-FF9900?logo=amazonec2)
+![JWT](https://img.shields.io/badge/JWT-Auth-000000?logo=jsonwebtokens)
+![Pandas](https://img.shields.io/badge/Pandas-2.0%2B-150458?logo=pandas)
+![spaCy](https://img.shields.io/badge/NLP-spaCy-09B3AF?logo=spacy)
+![Redis](https://img.shields.io/badge/Redis-Caching-DC382D?logo=redis)
+
+![CI/CD](https://img.shields.io/badge/Process-CI/CD_Pipelines-2496ED)
+![REST APIs](https://img.shields.io/badge/API-RESTful-FF6B6B)
+![Security](https://img.shields.io/badge/Security-Auth_%2B_Policy_Validation-4A5568)
+![LLM Workflow](https://img.shields.io/badge/LLM-Function_Calling_Workflow-8A2BE2)
 
 
 
@@ -731,174 +783,165 @@ data analysis
 
 ---
 
-### Alpolink
+### 🛠️ Jim’s Bathrooms – Franchise Project Management Dashboard
+
+**Jim’s Bathrooms** is a comprehensive web-based dashboard built for a leading Australian bathroom renovation company and its franchisees. The system empowers contractors and regional managers to track the entire project lifecycle — from initial consultation to post-renovation feedback — enabling efficient communication, status updates, and transparency at every stage.
+
+---
+
+#### 🔧 Features & Functionality
+- 📋 **Project Pipeline Tracking:** View and manage renovation jobs across phases like Quote, Design, In Progress, Completed, and Follow-up.
+- 🧾 **Franchise Dashboard:** Each franchisee accesses their own dashboard with relevant projects, client history, and performance insights.
+- 📤 **File Uploads:** Upload and view project photos, floor plans, invoices, and signed contracts for each job.
+- 💬 **Internal Notes & Comments:** Contractors can leave private notes or communicate project-specific updates directly through the system.
+- 📆 **Scheduling & Deadlines:** Track key dates and milestones with visual timelines and status indicators.
+- 📈 **Analytics:** Admin panel provides an overview of active jobs, job completion rates, and customer satisfaction.
+
+---
+
+#### 👨‍💻 Role & Responsibilities
+- Developed the frontend using **React.js** with modern UI/UX principles tailored for non-technical users.
+- Implemented reusable components and state management (Redux / Context API).
+- Built secure backend APIs with **Node.js** and **Express**, handling authentication, role-based access, and CRUD operations.
+- Designed PostgreSQL schemas for franchise-user relationships, project logs, and attachments.
+- Integrated **AWS S3** for secure image and document storage.
+- Built out admin dashboard with filters, project search, and dynamic reports.
+- Deployed the platform to production with **Docker** and **CI/CD pipelines**.
+
+---
+
+#### 🧩 Tech Stack
+![React](https://img.shields.io/badge/Frontend-React.js-61DAFB?logo=react)
+![Node.js](https://img.shields.io/badge/Backend-Node.js-339933?logo=node.js)
+![Express](https://img.shields.io/badge/API-Express.js-000000?logo=express)
+![PostgreSQL](https://img.shields.io/badge/Database-PostgreSQL-336791?logo=postgresql)
+![AWS S3](https://img.shields.io/badge/Storage-AWS_S3-FF9900?logo=amazon-aws)
+![Docker](https://img.shields.io/badge/Deployment-Docker-2496ED?logo=docker)
+![CI/CD](https://img.shields.io/badge/Process-CI/CD_Pipelines-blue)
+
+---
+
+#### 🚧 Challenges & Solutions
+- **Challenge:** Managing access across multiple franchise locations with independent workflows.  
+  **Solution:** Implemented multi-tenant logic using franchise-based role assignment and route guards.
+
+- **Challenge:** Secure handling of image/document uploads.  
+  **Solution:** Used AWS S3 signed URLs and server-side validation to prevent unauthorized access.
+
+- **Challenge:** Keeping stakeholders updated without overwhelming UI.  
+  **Solution:** Built status-based tabs, color-coded progress indicators, and subtle alert systems.
+- **[site](https://jimsbathrooms.com.au/)**
+---
 
 
-<div id="tossdown-img" align="center">
-  <img width="1781" alt="303568944-b1682850-9cb2-4586-af01-6949c5f654e3" src="https://github.com/user-attachments/assets/42939368-e76e-4c2a-85ff-a5d4aa9fb98d">
-</div>
 
-- **Description**  
-  Alpolink is a platform for selling exam dumps, developed using PHP and the CodeIgniter framework, with MySQL as the database management system.
 
-- **Role and Responsibilities**  
-  As a senior software engineer for Alpolink, my responsibilities included addressing architectural challenges and optimizing system performance.
 
-- **Challenges Faced**  
-  1. ***Architectural Complexity***  
-     <b>Challenge: </b> Each website had its own frontend and database instance, leading to complexities in managing and maintaining multiple codebases and databases. This fragmented architecture resulted in higher operational overhead, difficulties in applying updates, and increased risk of inconsistencies.  
-     <b>Solution: </b>Implemented a unified backend architecture where a single backend serves multiple websites. This approach consolidated the codebases and databases, reducing complexity. The unified backend enabled centralized management, allowing for easier maintenance and scalability. Updates and bug fixes could be applied universally, improving operational efficiency and consistency across the platform.
+---
 
-  2. ***Performance Optimization***  
-     <b>Challenge: </b> The platform needed to handle a growing number of users and data without compromising speed and reliability. The initial architecture with multiple database instances led to inefficient resource usage and slower response times.  
-     <b>Solution: </b> Optimized the system by consolidating the databases, which allowed for better indexing and query handling. Implemented caching mechanisms using Memcached to store frequently accessed data, reducing the load on the database and improving response times. Additionally, code optimization and load balancing techniques were applied to enhance overall system performance.
+### 💹 CoinDCX  – Crypto Trading Dashboard (UI/UX + Integration)
 
-  3. ***Scalability***  
-     <b>Challenge: </b> Ensuring the platform could scale efficiently to accommodate more websites and users without significant overhead in maintenance and resource allocation.  
-     <b>Solution: </b> The unified backend architecture inherently provided a scalable solution. By managing a single codebase and database system, adding new websites to the platform became straightforward. Employed containerization Docker to automate deployments and manage resources dynamically. This ensured the platform could handle increased load and scale horizontally as needed, all while maintaining ease of maintenance and operational simplicity.
+**CoinDCX Clone** is a cryptocurrency trading dashboard built to replicate the clean user experience and real-time market tracking of CoinDCX. The application allows users to monitor live crypto prices, manage a mock portfolio, and analyze coin trends using interactive charts. Built with a focus on usability, scalability, and performance, the project demonstrates how to create responsive fintech dashboards with a modern tech stack.
 
-  4. ***Data Consistency and Integrity***  
-     <b>Challenge: </b> Ensuring data consistency and integrity across multiple websites and a single backend can be challenging, especially during high traffic or concurrent access scenarios.  
-     <b>Solution: </b> Implemented database transactions to ensure data consistency and integrity during multiple operations. Used MySQL’s ACID properties to maintain data accuracy and reliability. Applied data validation both at the application and database levels to prevent incorrect data entry.
+---
 
-  5. ***Deployment and CI/CD***  
-     <b>Challenge: </b> Managing deployments and continuous integration/continuous deployment (CI/CD) for a platform serving multiple websites.  
-     <b>Solution: </b> Set up a robust CI/CD pipeline using tools like Jenkins to automate testing, building, and deployment processes. Containerized the application using Docker, enabling consistent environments across development, testing, and production. 
+#### 🔧 Features & Functionality
+- 💰 **Live Price Tracker:** Real-time updates for popular crypto pairs (BTC, ETH, USDT, etc.) via public market APIs.
+- 📈 **Interactive Charts:** Price history, volume, and candlestick charts built using Chart.js/Recharts for technical analysis.
+- 💹 **Mock Portfolio Management:** Users can simulate buys/sells and track unrealized PnL.
+- 🔍 **Coin Explorer:** Detailed view of individual cryptocurrencies including market cap, 24h volume, and price change.
+- 🌙 **Dark Mode:** Fully responsive dark/light theme toggle for a seamless trading experience.
+- 🔐 **Login (Optional):** JWT-authenticated session management for personalizing portfolios.
 
+---
+
+#### 👨‍💻 Role & Responsibilities
+- Designed responsive UI/UX inspired by CoinDCX using **React.js** and **Tailwind CSS**.
+- Integrated market data from **CoinGecko/CryptoCompare APIs** to simulate live trading conditions.
+- Created reusable components for trading pairs, coin cards, price tables, and watchlists.
+- Built state management system using **Redux Toolkit** for tracking selected coins and portfolio state.
+- Implemented modular routing and authentication flows using React Router and JWT logic.
+- Optimized performance for fast load times with lazy loading and dynamic imports.
+
+---
+
+#### 🧩 Tech Stack
+![React](https://img.shields.io/badge/Frontend-React.js-61DAFB?logo=react)
+![Redux](https://img.shields.io/badge/State_Redux_Toolkit-764ABC?logo=redux)
+![Tailwind](https://img.shields.io/badge/Styling-Tailwind_CSS-38B2AC?logo=tailwindcss)
+![Chart.js](https://img.shields.io/badge/Charts-Chart.js-FF6384?logo=chartdotjs)
+![CoinGecko API](https://img.shields.io/badge/API-CoinGecko/CryptoCompare-yellow)
+![JWT](https://img.shields.io/badge/Auth-JWT_Auth-000000?logo=jsonwebtokens)
+![Vercel](https://img.shields.io/badge/Deployment-Vercel-000000?logo=vercel)
+
+---
+
+#### 🚧 Challenges & Solutions
+- **Challenge:** Handling real-time data updates without overwhelming the UI.  
+  **Solution:** Used throttling, polling intervals, and state batching to ensure smooth updates.
+
+- **Challenge:** Managing large sets of coin data with fast filtering and search.  
+  **Solution:** Used indexed search + optimized memoization to prevent re-renders.
+
+- **Challenge:** Simulating trades without a backend.  
+  **Solution:** Built a localStorage-based system to persist user portfolio actions securely on the frontend.
   
-
-- **[site](https://www.certificationsbuzz.com/)**
-
-
-![Node.js](https://img.shields.io/badge/Node.js-18%2B-339933?logo=nodedotjs)
-![TypeScript](https://img.shields.io/badge/TypeScript-4.0%2B-3178C6?logo=typescript)
-![TypeORM](https://img.shields.io/badge/TypeORM-0.3%2B-000000?logo=typescript)
-![Docker](https://img.shields.io/badge/Docker-24.0%2B-2496ED?logo=docker)
-![AWS EC2](https://img.shields.io/badge/AWS_EC2-Instance-FF9900?logo=amazonec2)
-![JWT](https://img.shields.io/badge/JWT-Auth-000000?logo=jsonwebtokens)
-![Jest](https://img.shields.io/badge/Jest-29.0%2B-C21325?logo=jest)
-![Redis](https://img.shields.io/badge/Redis-7.0%2B-DC382D?logo=redis)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15%2B-4169E1?logo=postgresql)
-![AWS S3](https://img.shields.io/badge/AWS_S3-Storage-569A31?logo=amazons3)  
-
-![CI/CD](https://img.shields.io/badge/Process-CI/CD_Pipelines-2496ED)
-![REST APIs](https://img.shields.io/badge/API-RESTful-FF6B6B)
-![Auth](https://img.shields.io/badge/Security-Auth_(JWT/OAuth)-4A5568)
-![Dependency Injection](https://img.shields.io/badge/Pattern-Dependency_Injection-FF6B6B)
-![Chain of Responsibility](https://img.shields.io/badge/Pattern-Chain_of_Responsibility-48BB78)
-![Decorator Pattern](https://img.shields.io/badge/Pattern-Decorator-FFD700)
-
-
+ **[site](https://coinsdcx.com/)**
 
 ---
 
-### Aanganpk
 
 
-<div id="aangan-img" align="center">
-  <img width="1349" alt="303569709-6b2bc488-3e4b-4a6a-9b4e-efa61e9d2c4a" src="https://github.com/user-attachments/assets/7372d9ad-0531-40dd-87b1-925a180e7013">
-</div>
+### 🌍 Travel Africa ETOA – Tour Booking & Operator Dashboard
 
-- **Description**  
-  Aanganpk is a multivendor ecommerce platform specializing in Pakistani women's handcrafted items. The platform is built using WordPress with WooCommerce plugin, leveraging PHP for customizations and extensions.
-
-- **Role and Responsibilities**  
-  As a senior software engineer for Aanganpk, my responsibilities included addressing platform limitations and customizing functionalities to meet business requirements.
-
-- **Challenges Faced**  
-  1. ***Platform Limitations***  
-     <b>Challenge: </b> WordPress and WooCommerce, while flexible, have inherent limitations in handling complex multi-vendor functionalities, which can affect performance and scalability.  
-     <b>Solution: </b> Extended WooCommerce functionalities using custom PHP code to better handle multi-vendor operations. Developed custom plugins and utilized hooks and filters to tailor the platform to specific business needs without compromising performance. Optimized database queries and implemented caching mechanisms to enhance performance.
-
-  2. ***Vendor Management***  
-     <b>Challenge: </b> Managing multiple vendors with varying requirements and ensuring a smooth onboarding process was complex.  
-     <b>Solution: </b> Created a customized vendor dashboard using PHP and WooCommerce hooks, providing vendors with tools to manage their products, orders, and profile. Implemented role-based access controls to ensure vendors could only access their own data. Developed comprehensive documentation and an onboarding guide to facilitate a smooth vendor setup process.
-
-  3. ***Customization and Extensibility***  
-     <b>Challenge: </b> The need for custom features not available in standard WooCommerce and WordPress plugins to meet specific business requirements.  
-     <b>Solution: </b> Developed custom PHP plugins and extensions to add the required features. Used child themes and custom templates to modify the frontend appearance and functionality without affecting the core theme. Ensured all customizations adhered to WordPress coding standards for maintainability and compatibility with future updates.
-
-  
-
-- **[site](https://kaarvan.com.pk/portfolio-item/aanganpk-com/)**
-
-![Node.js](https://img.shields.io/badge/Node.js-18%2B-339933?logo=nodedotjs)
-![WordPress](https://img.shields.io/badge/WordPress-CMS-21759B?logo=wordpress)
-![MySQL](https://img.shields.io/badge/MySQL-8.0%2B-4479A1?logo=mysql)
-![Query Optimization](https://img.shields.io/badge/Database-Query_Optimization-805AD5)
-![REST APIs](https://img.shields.io/badge/API-RESTful-FF6B6B)
-![Tableau](https://img.shields.io/badge/Tableau-2023.3%2B-E97627?logo=tableau)
-
-
+**Travel Africa ETOA** is a full-featured travel and tour management platform built for African tourism agencies and ETOA-style operators. It enables tour organizers to list group departures, manage bookings, track payments, and issue QR-based travel passes. Designed for both backend efficiency and frontend elegance, the system bridges the gap between operators, travelers, and administrators with real-time data flow and mobile responsiveness.
 
 ---
 
-### Information Retrieval System
-
-
-- **Description**  
-  The Information Retrieval System is designed to retrieve relevant documents from a corpora using machine learning techniques. It utilizes Support Vector Machine (SVM) algorithms for classification and is implemented in Python within Jupyter Notebook environment. Data is stored and managed in a Cassandra database.
-
-- **Role and Responsibilities**  
-  As the sole architect and developer of the Information Retrieval System, I assumed complete ownership of all project aspects. My role involved the design and implementation of sophisticated machine learning algorithms tailored for document classification and retrieval. This project epitomizes my capacity to conceive, execute, and refine complex technical solutions independently.
-
-- **Challenges Faced**  
-  1. ***Handling Large Datasets***  
-     <b>Challenge: </b> Managing and processing large datasets efficiently to ensure timely document retrieval and accurate results.  
-     <b>Solution: </b> Utilized the distributed nature of the Cassandra database to manage large datasets effectively. Implemented data partitioning and replication strategies to ensure high availability and fault tolerance. Leveraged batch processing and parallel computing techniques in Python to handle data preprocessing and feature extraction, significantly reducing processing time.
-
-  2. ***Algorithm Optimization***  
-     <b>Challenge: </b> Implementing and optimizing sophisticated machine learning algorithms like TF-IDF for document classification and retrieval.  
-     <b>Solution: </b> Developed custom Python functions for TF-IDF calculation, ensuring they were optimized for performance. Applied dimensionality reduction techniques such as Singular Value Decomposition (SVD) to improve the efficiency and accuracy of the retrieval process. Regularly profiled and optimized the code to eliminate bottlenecks and improve overall performance.
-
-  3. ***Precision and Recall Evaluation***  
-     <b>Challenge: </b> Evaluating the effectiveness of the retrieval system in terms of precision and recall to ensure relevant documents are retrieved.  
-     <b>Solution: </b> Designed and implemented evaluation metrics to measure the precision and recall of the retrieval system. Conducted extensive testing using a validation dataset to fine-tune the algorithms and improve retrieval accuracy. Used confusion matrices and ROC curves to visualize and analyze the performance, making data-driven decisions for further optimization.
-
-  4. ***Data Storage and Management***  
-     <b>Challenge: </b> Efficiently storing and managing a large volume of documents and metadata in a Cassandra database.  
-     <b>Solution: </b> Designed a scalable schema in Cassandra tailored for efficient retrieval operations. Used Cassandra’s indexing and query capabilities to ensure fast and reliable access to documents. Implemented data consistency and integrity checks to maintain the quality of stored data.
-
-  5. ***Scalability and Performance***  
-     <b>Challenge: </b> Ensuring the system can scale to handle increasing volumes of data and user queries without degradation in performance.  
-     <b>Solution: </b> Leveraged the distributed architecture of Cassandra to scale horizontally, adding more nodes as needed to handle increased load. Implemented load balancing techniques to distribute user queries evenly across the system, preventing bottlenecks and ensuring consistent performance. Continuously monitored system performance and made necessary adjustments to maintain efficiency.
-
-
-![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python)
-![Pandas](https://img.shields.io/badge/Pandas-2.0%2B-150458?logo=pandas)
-![NumPy](https://img.shields.io/badge/NumPy-1.24%2B-013243?logo=numpy)
-![Cassandra](https://img.shields.io/badge/Cassandra-4.0%2B-1287B1?logo=apachecassandra)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15%2B-4169E1?logo=postgresql)
-![tf-idf](https://img.shields.io/badge/NLP-tf/idf-5D9CEC?logo=scikitlearn)
+#### 🧭 Key Features
+- 🛫 **Group Departures Management:** Operators can create and manage scheduled tours with details like destination, departure date, guide, vehicle, and seat availability.
+- 💸 **Payment Dashboard:** View and add customer payments with breakdowns by operator, group, or date. QR codes are generated for each completed booking.
+- 📱 **Mobile-Friendly Cards:** Each traveler or group gets a mobile-friendly "Tour Card" with all details, QR code, and operator branding.
+- 🔍 **QR Code Scanning:** Admins or field staff can scan traveler QR codes to validate payment and group association instantly.
+- 🧾 **Auto-Filled Forms via QR:** QR scanner integration allows quick payment additions by reading JSON data from physical passes.
+- 🗂️ **API-Based Architecture:** Seamless interaction with dynamic tour data through a RESTful backend.
 
 ---
 
-### Stealth Address Library
+#### 👨‍💻 Role & Responsibilities
+- Built the complete cross-platform frontend using **React Native** (Android, iOS, Web) with dynamic data rendering.
+- Integrated QR scanner using **react-native-camera-kit** and auto-filled forms via scanned JSON payloads.
+- Designed and implemented APIs using **Node.js** and **Express** to handle departures, operators, and payment logic.
+- Developed secure backend routes for payment entry, QR generation, and verification.
+- Used **react-hook-form** for smooth and dynamic payment form handling based on QR or manual entry.
+- Integrated **react-native-view-shot** and **expo-media-library** for saving travel cards as images locally or on the web.
 
-- **Description**  
-  Stealth Addresses is a cryptographic project focused on generating secure and private addresses for transactions. It utilizes the x25519 algorithm for shared secret generation and the ed25519 algorithm for signature generation and verification.
+---
 
-- **Role and Responsibilities**  
-  As the sole proprietor and developer of the Stealth Address Library project, I assumed full ownership and accountability throughout its lifecycle. Responsibilities encompassed every aspect, from conceptualization and design to implementation and refinement. This project epitomizes my capacity to initiate, execute, and deliver complex technical initiatives independently.
+#### 🧩 Tech Stack
+![React Native](https://img.shields.io/badge/Mobile-React_Native-61DAFB?logo=react)
+![Node.js](https://img.shields.io/badge/Backend-Node.js-339933?logo=node.js)
+![Express](https://img.shields.io/badge/API-Express.js-000000?logo=express)
+![QRCode](https://img.shields.io/badge/Feature-QR_Code_Scanning-4A90E2)
+![ViewShot](https://img.shields.io/badge/Snapshot-ViewShot_Cards-00C896)
+![MongoDB](https://img.shields.io/badge/Database-MongoDB-47A248?logo=mongodb)
+![Media Library](https://img.shields.io/badge/Media-Expo_Media_Library-FF5F6D)
 
-- **Challenges Faced**  
-  1. ***Integrating x25519 and ed25519 algorithms***  
-     <b>Challenge: </b> Integrating the x25519 algorithm for shared secret generation with the ed25519 algorithm for signature generation and verification posed challenges due to their different purposes and implementations.  
-     <b>Solution: </b> Implemented an initial stealth address generation mechanism using the shared secret methodology of x25519, ensuring that the process of creating secure and private addresses was initiated correctly. Instead of relying on standard libraries for ed25519, developed a custom core implementation based on RFC8032 specifications. This approach allowed for seamless integration and ensured that the unique requirements of the project were met, maintaining high security standards.
+---
 
-  2. ***Ensuring compatibility between cryptographic algorithms***  
-     <b>Challenge: </b> Ensuring that the x25519 and ed25519 algorithms worked together seamlessly, despite their differing cryptographic purposes and underlying mathematical principles, was complex.  
-     <b>Solution: </b> Utilized advanced mathematical and cryptographic principles to design a robust mechanism for generating stealth addresses. This involved a deep understanding of both algorithms and their interaction to ensure compatibility and security. Conducted iterative testing and validation to verify that the integrated algorithms worked together as intended. This process helped identify and resolve any compatibility issues, ensuring the reliability of the stealth address generation process.
+#### 🚧 Challenges & Solutions
+- **Challenge:** Syncing QR code-based workflows across mobile and web environments.  
+  **Solution:** Used platform-aware logic for saving QR cards, and fallback mechanisms for devices without camera permissions.
 
-  3. ***Developing a custom implementation of ed25519***  
-     <b>Challenge: </b> Creating a custom implementation of the ed25519 algorithm required a comprehensive understanding of its specifications and intricate details, as well as ensuring it adhered to security standards.  
-     <b>Solution: </b> Followed the RFC8032 specifications meticulously to develop a custom core implementation of ed25519. This ensured that the algorithm was implemented correctly and securely, avoiding potential pitfalls associated with standard libraries.
+- **Challenge:** Making forms dynamic based on scanned QR JSON input.  
+  **Solution:** Used `react-hook-form` + `useEffect` to dynamically populate fields upon QR detection.
 
-![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python)
-![Cryptography](https://img.shields.io/badge/x25519-ed25519-blue?logo=gnuprivacyguard)
-![Web3.js](https://img.shields.io/badge/Web3.js-4.0%2B-F16822?logo=web3dotjs)
+- **Challenge:** Offline access for field agents.  
+  **Solution:** Cached essential QR card and payment data locally to allow limited offline use and re-sync.
 
+---
 
+> 🎒 Built for tourism companies that need fast, reliable, and digital-first tools to manage growing travel operations in Africa.
 ---
 
 
@@ -988,41 +1031,6 @@ data analysis
 
 ---
 
-### KidSafe
-
-
-- **Description**  
-  KidSafe is an application designed to provide a safe environment for children to watch YouTube videos. It utilizes the YouTube API to curate a selection of kid-friendly content.
-
-- **Role and Responsibilities**  
-  As a senior software engineer for the KidSafe project, my responsibilities included implementing features, integrating APIs, and ensuring child safety and usability.
-
-- **Challenges Faced**  
-  1. ***Manual video selection by parents***  
-     <b>Challenge: </b> Initially, the app was designed to allow parents to manually select videos for their children. This approach was cumbersome and time-consuming for parents, reducing the usability and efficiency of the app.  
-     <b>Solution: </b> Shifted from manual selection to an automated process by integrating functionality to include all videos from a specified YouTube channel. This significantly streamlined the user experience, making it easier for parents to provide a curated list of kid-friendly content.
-
-  2. ***Fetching videos by YouTube channel name***  
-     <b>Challenge: </b> Integrating functionality to automatically include all videos from a YouTube channel posed a challenge, as the YouTube API does not provide direct access to fetch videos by channel name.  
-     <b>Solution: </b> Developed a Python service using Beautiful Soup to scrape the web and fetch the YouTube channel ID using the channel name. This involved parsing the HTML of the YouTube channel page to extract the channel ID. Once the channel ID was obtained, implemented recursive calls to the YouTube API to fetch all videos associated with the channel. This ensured that the app could automatically and efficiently gather all relevant videos for inclusion in the KidSafe app.
-
-  3. ***Ensuring child safety and content appropriateness***  
-     <b>Challenge: </b> Ensuring that all videos included in the app were appropriate and safe for children was critical.  
-     <b>Solution: </b> Implemented additional content filtering mechanisms to verify the suitability of videos. This included checking video metadata, descriptions, and comments for any inappropriate content. Added parental control features allowing parents to review and approve the automatically fetched videos before making them accessible to children, providing an additional layer of safety.
-
-  4. ***Handling API rate limits and data fetching efficiency***  
-     <b>Challenge: </b> Efficiently fetching large numbers of videos while respecting YouTube API rate limits was a technical challenge.  
-     <b>Solution: </b> Implemented rate limit management techniques, such as batching requests and using exponential backoff strategies, to ensure compliance with YouTube API limits. Optimized the data fetching process by implementing pagination and caching strategies, reducing the number of API calls and improving the performance and responsiveness of the app.
-
-  5. ***Maintaining a user-friendly interface***  
-     <b>Challenge: </b> Ensuring that the app's interface remained user-friendly and intuitive despite the added complexity of automated content fetching.  
-     <b>Solution: </b> Focused on designing a clean and intuitive user interface that simplifies navigation and content discovery for both parents and children. Ensured seamless integration of the new automated features into the existing interface, providing clear instructions and feedback to users throughout the process.
-
-![Node.js](https://img.shields.io/badge/Node.js-18%2B-339933?logo=nodedotjs)
-![TypeScript](https://img.shields.io/badge/TypeScript-4.0%2B-3178C6?logo=typescript)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15%2B-4169E1?logo=postgresql)
-![MongoDB](https://img.shields.io/badge/MongoDB-6.0%2B-47A248?logo=mongodb)
-![YouTube API](https://img.shields.io/badge/YouTube%20API-Data_v3-FF0000?logo=youtube)
 
 
  ---
